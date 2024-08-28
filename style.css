@@ -18,6 +18,12 @@ body {
     width: 33vw;
 }
 
+.image-container img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
 .body-container {
     background-color: blueviolet;
     width: 67vw;
