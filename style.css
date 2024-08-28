@@ -27,11 +27,11 @@ body {
 
 .logo {
     position: absolute;
-    background-color: black;
+    background-color:rgba(0, 0, 0, 0.9);
     opacity: 0.8;
     top: 10vh;
     width: 33vw;
-    height: 10vh;
+    height: 20vh;
 }
 
 .body-container {
