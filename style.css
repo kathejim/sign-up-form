@@ -2,5 +2,32 @@
     margin: 0;
     padding: 0;
     border: 1px solid red;
-    background-color: rgb(104, 204, 95);
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: yellow;
+    display: flex;
+}
+
+.image-container {
+    margin-right: auto;
+    background-color: pink;
+    height: 100vh;
+    width: 33vw;
+}
+
+.body-container {
+    background-color: blueviolet;
+    width: 67vw;
+}
+
+.text-container {
+    background-color: brown;
+    height: 25vh;
+}
+
+.form-container {
+    background-color: wheat;
 }
