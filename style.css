@@ -32,6 +32,9 @@ body {
     top: 10vh;
     width: 33vw;
     height: 20vh;
+    color: aliceblue;
+    font-size: 8vh;
+    text-align: center;
 }
 
 .body-container {
