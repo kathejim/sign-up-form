@@ -12,6 +12,7 @@ body {
 }
 
 .image-container {
+    position: relative;
     margin-right: auto;
     background-color: pink;
     height: 100vh;
@@ -22,6 +23,15 @@ body {
     height: 100%;
     width: 100%;
     object-fit: cover;
+}
+
+.logo {
+    position: absolute;
+    background-color: black;
+    opacity: 0.8;
+    top: 10vh;
+    width: 33vw;
+    height: 10vh;
 }
 
 .body-container {
