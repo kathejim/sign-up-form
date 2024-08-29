@@ -1,3 +1,12 @@
+@font-face {
+    font-family: "typewriter";
+    src: 
+        url(./fonts/veteran_typewriter-webfont.woff2) format("woff2"),
+        url(./fonts/veteran_typewriter-webfont.woff) format("woff");
+        font-weight: normal;
+        font-style: normal;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -48,8 +57,10 @@ body {
 
 .logo #brand {
     display: flex;
+    font-family: "typewriter";
+    letter-spacing: 4px;
     color: aliceblue;
-    font-size: calc(15px + 1.5vh + 1.5vw);
+    font-size: calc(20px + 1.7vh + 1.7vw);
     font-weight: 800;
     text-align: center;
     align-items: center;
