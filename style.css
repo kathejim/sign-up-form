@@ -26,15 +26,35 @@ body {
 }
 
 .logo {
+    display: flex;
+    align-content: center;
     position: absolute;
     background-color:rgba(0, 0, 0, 0.9);
     opacity: 0.8;
     top: 10vh;
-    width: 33vw;
+    width: 100%;
     height: 20vh;
+}
+
+.logo img {
+    object-fit: scale-down;
+    min-width: 150px;
+    width: 33%;
+    align-self: center;
+    margin-right: auto;
+    background-color: green;
+    padding: 0px 15px;
+}
+
+.logo #brand {
+    display: flex;
     color: aliceblue;
-    font-size: 8vh;
+    font-size: calc(15px + 1.5vh + 1.5vw);
+    font-weight: 800;
     text-align: center;
+    align-items: center;
+    margin: auto;
+
 }
 
 .body-container {
