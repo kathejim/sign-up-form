@@ -74,8 +74,26 @@ body {
 }
 
 .text-container {
+    display: flex;
+    align-items: left;
+    padding: 5vh 6vw;
+    overflow: hidden;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: calc(0.5rem + 1.2vh + 1.2vw);
+    padding-bottom: 3vh;
+}
+
+.text-container p {
+    font-size: calc(0.15rem + 0.7vh + 0.7vw);
+}
+
+.text-container {
     background-color: brown;
     height: 25vh;
+
 }
 
 .form-container {
