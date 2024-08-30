@@ -97,5 +97,13 @@ h1 {
 }
 
 .form-container {
-    background-color: wheat;
+    background-color: greenyellow;
+    height: 100%;
+}
+
+form {
+    width: 380px;
+    margin: 30px auto;
+    background-color: whitesmoke;
+
 }
