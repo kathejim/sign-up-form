@@ -18,6 +18,8 @@ body {
     height: 100vh;
     background-color: yellow;
     display: flex;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 6vh + 6vw;
 }
 
 .image-container {
@@ -76,18 +78,18 @@ body {
 .text-container {
     display: flex;
     align-items: left;
-    padding: 5vh 6vw;
+    padding: 5vh 5vw;
     overflow: hidden;
     flex-direction: column;
 }
 
 h1 {
-    font-size: calc(0.5rem + 1.2vh + 1.2vw);
+    font-size: calc(1rem + 0.7vh + 0.7vw);
     padding-bottom: 3vh;
 }
 
 .text-container p {
-    font-size: calc(0.15rem + 0.7vh + 0.7vw);
+    font-size: calc(0.6rem + 0.5vh + 0.5vw);
 }
 
 .text-container {
@@ -102,8 +104,34 @@ h1 {
 }
 
 form {
-    width: 380px;
+    width: 800px;
     margin: 30px auto;
     background-color: whitesmoke;
+    font-size: calc(0.6rem + 0.5vh + 0.5vw);
+}
 
+label,
+input,
+select {
+    display: block;
+    width: 100%;
+    padding: 5px;
+}
+
+#form-columns {
+    display: flex;
+    align-content: space-between;
+    align-items: stretch;
+    gap: 30px;
+}
+
+#left-form {
+    display: flex;
+    flex-direction: column;
+    flex: 1; 
+    gap: 20px; 
+}
+
+#right-form {
+    flex: 1;
 }
