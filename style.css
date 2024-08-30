@@ -104,10 +104,11 @@ h1 {
 }
 
 form {
-    width: 800px;
+    width: 100%;
     margin: 30px auto;
     background-color: whitesmoke;
     font-size: calc(0.6rem + 0.5vh + 0.5vw);
+    padding: 40px 80px;
 }
 
 label,
