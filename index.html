@@ -29,33 +29,38 @@
                 <div>
                     <p>Create an account to get started!</p>
                     <div>
-                        <div>
-                            <label for="name">Name</label>
-                            <input type="text" id="name" placeholder="Name">
+                        <div id="left-form">
+                            <div>
+                                <label for="name">Name</label>
+                                <input type="text" id="name" placeholder="Name">
+                            </div>
+                            <div>
+                                <label for="bdate">Birth Date</label>
+                                <input type="date" id="bdate" placeholder="Birth Date">
+                            </div>
+                            <div>
+                                <label for="pass">Password</label>
+                                <input type="text" id="pass" minlength="8">
+                            </div>
                         </div>
-                        <div>
-                            <label for="email">Email</label>
-                            <input type="email" id="email" placeholder="Email">
-                        </div>
-                        <div>
-                            <label for="bdate">Birth Date</label>
-                            <input type="date" id="bdate" placeholder="Birth Date">
-                        </div>
-                        <div>
-                            <label for="language-select">Language I know</label>
-                            <select name="languages" id="language-select">
-                                <option value="english">English</option>
-                                <option value="spanish">Spanish</option>
-                                <option value="french">French</option>
-                            </select>
-                        </div>
-                        <div>
-                            <label for="pass">Password</label>
-                            <input type="text" id="pass" minlength="8">
-                        </div>
-                        <div>
-                            <label for="confirm-pass">Confirm Password</label>
-                            <input type="text" id="confirm-pass">
+
+                        <div id="right-form">
+                            <div>
+                                <label for="email">Email</label>
+                                <input type="email" id="email" placeholder="Email">
+                            </div>
+                            <div>
+                                <label for="language-select">Language I know</label>
+                                <select name="languages" id="language-select">
+                                    <option value="english">English</option>
+                                    <option value="spanish">Spanish</option>
+                                    <option value="french">French</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="confirm-pass">Confirm Password</label>
+                                <input type="text" id="confirm-pass">
+                            </div>
                         </div>
                     </div>     
                     <div>
