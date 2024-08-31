@@ -16,7 +16,7 @@
 * {
     margin: 0;
     padding: 0;
-    border: 1px solid red;
+    burder: 1px solid red;
     box-sizing: border-box;
 }
 
@@ -125,7 +125,6 @@ select {
     box-sizing: border-box;
     font-size: inherit;
     border-color: #75757770;
-    /*! margin-bottom: 10px; */
 }
 
 label {
@@ -163,3 +162,9 @@ button {
     color: aliceblue;
 }
 
+input:valid, select:valid {
+    border-color: blue;
+}
+input:invalid, select:invalid {
+    border-color: red;
+}
