@@ -103,46 +103,51 @@ h1 {
 
 form {
     display:flex;
-    width: 640px;
-    margin: auto;
     background-color: lightblue;
     font-size: var(--font-p);
-    padding: 40px 120px;
+    flex-direction: column;
+}
+
+form > div {
+    width: 650px;
+    background-color: blue;
+    margin: auto;
+    padding: 30px 0px;
+    height: inherit;
 }
 
 label,
 input,
 select {
     display: block;
-    width: 100%;
-    padding: 5px;
-    height: 50px;
+    width: 310px;
+    height: 30px;
     box-sizing: border-box;
     font-size: inherit;
     border-color: #75757770;
+    /*! margin-bottom: 10px; */
 }
 
 label {
+    height: 20px;
 }
 
+input, select {
+    margin-bottom: 25px;
+}
 select {
     xappearance: none;
 }
 
 #form-columns {
     display: flex;
-    align-content: space-between;
-    align-items: stretch;
-    gap: 100px;
+    flex-wrap: wrap;
+    /*! width: 640px; */
+    /*! gap: px; */
     margin: 30px 0px;
+    justify-content: space-between;
 }
 
-#left-form, #right-form {
-    display: flex;
-    flex-direction: column;
-    flex: 1; 
-    gap: 20px; 
-}
 
 #button {
     display: flex;
