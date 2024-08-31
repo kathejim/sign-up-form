@@ -10,7 +10,7 @@
 :root {
     --font-logo: clamp(1.5rem, 2vw + 1rem, 5rem);
     --font-h1: clamp(1rem, 1rem + 1vw, 3rem);
-    --font-p: clamp(0.6rem, 0.6rem + 1vw, 2rem);
+    --font-p: clamp(0.9rem, 0.5vw + 0.6rem, 2rem);
 }
 
 * {
