@@ -102,11 +102,12 @@ h1 {
 }
 
 form {
-    width: 100%;
-    margin: 30px auto;
-    background-color: whitesmoke;
+    display:flex;
+    width: 640px;
+    margin: auto;
+    background-color: lightblue;
     font-size: var(--font-p);
-    padding: 40px 140px;
+    padding: 40px 120px;
 }
 
 label,
