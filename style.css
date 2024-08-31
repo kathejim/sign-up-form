@@ -7,10 +7,16 @@
         font-style: normal;
 }
 
+:root {
+    --font-logo: clamp(1.5rem, 1.5rem + 1vw, 5rem);
+    --font-h1: clamp(1rem, 1rem + 1vw, 3rem);
+    --font-p: clamp(0.6rem, 0.6rem + 1vw, 2rem);
+}
+
 * {
     margin: 0;
     padding: 0;
-    border: 1px solid red;
+    burder: 1px solid red;
     box-sizing: border-box;
 }
 
@@ -19,7 +25,6 @@ body {
     background-color: yellow;
     display: flex;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 6vh + 6vw;
 }
 
 .image-container {
@@ -62,7 +67,7 @@ body {
     font-family: "typewriter";
     letter-spacing: 4px;
     color: aliceblue;
-    font-size: calc(20px + 1.7vh + 1.7vw);
+    font-size: var(--font-logo);
     font-weight: 800;
     text-align: center;
     align-items: center;
@@ -84,12 +89,12 @@ body {
 }
 
 h1 {
-    font-size: calc(1rem + 0.7vh + 0.7vw);
+    font-size: var(--font-h1);
     padding-bottom: 3vh;
 }
 
 .text-container p {
-    font-size: calc(0.6rem + 0.5vh + 0.5vw);
+    font-size: var(--font-p);
 }
 
 .text-container {
@@ -100,15 +105,14 @@ h1 {
 
 .form-container {
     background-color: greenyellow;
-    height: 100%;
 }
 
 form {
     width: 100%;
     margin: 30px auto;
     background-color: whitesmoke;
-    font-size: calc(0.6rem + 0.5vh + 0.5vw);
-    padding: 40px 80px;
+    font-size: var(--font-p);
+    padding: 40px 140px;
 }
 
 label,
@@ -117,24 +121,24 @@ select {
     display: block;
     width: 100%;
     padding: 5px;
-    height: 40px;
+    height: 50px;
     box-sizing: border-box;
-    font-size: 100%;
+    font-size: inherit;
+    border-color: #75757770;
 }
 
 label {
-    margin-bottom: 5px;
 }
 
 select {
-    appearance: none;
+    xappearance: none;
 }
 
 #form-columns {
     display: flex;
     align-content: space-between;
     align-items: stretch;
-    gap: 30px;
+    gap: 100px;
     margin: 30px 0px;
 }
 
@@ -153,7 +157,7 @@ select {
 
 button {
     font-family: inherit;
-    font-size: inherit;
+    font-size: var(--font-h1);
     font-weight: 700;
     width: 380px;
     height: 80px;
