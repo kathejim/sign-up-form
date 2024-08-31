@@ -31,19 +31,19 @@
                     <div id="form-columns">
                         <div>
                             <label for="name">Name</label>
-                            <input type="text" id="name" placeholder="Name">
+                            <input type="text" id="name" placeholder="Name" aria-required="true">
                         </div>
                         <div>
                             <label for="email">Email</label>
-                            <input type="email" id="email" placeholder="Email">
+                            <input type="email" id="email" placeholder="Email" aria-required="true">
                         </div>
                         <div>
                             <label for="bdate">Birth Date</label>
-                            <input type="date" id="bdate" placeholder="Birth Date">
+                            <input type="date" id="bdate" placeholder="Birth Date" aria-required="true">
                         </div>
                         <div>
                             <label for="language-select">Language I know</label>
-                            <select name="languages" id="language-select">
+                            <select name="languages" id="language-select" aria-required="true">
                                 <option value="english">English</option>
                                 <option value="spanish">Spanish</option>
                                 <option value="french">French</option>
@@ -51,18 +51,17 @@
                         </div>
                         <div>
                             <label for="pass">Password</label>
-                            <input type="text" id="pass" minlength="8">
+                            <input type="text" id="pass" minlength="8" aria-required="true">
                         </div>
                         <div>
                             <label for="confirm-pass">Confirm Password</label>
-                            <input type="text" id="confirm-pass">
+                            <input type="text" id="confirm-pass" aria-required="true">
                         </div>
                     </div>     
                     <div id="button">
                         <button type="submit">Sign Up</button>
                     </div>
                 </div>
-
             </form>
         </div>
     </div>
