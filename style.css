@@ -131,11 +131,16 @@ label {
     height: 20px;
 }
 
-input, select {
+#form-columns div {
     margin-bottom: 25px;
 }
 select {
     xappearance: none;
+}
+
+.error {
+    color: red;
+    font-size: 80%;   
 }
 
 #form-columns {
