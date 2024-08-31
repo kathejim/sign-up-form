@@ -75,14 +75,15 @@ body {
 .body-container {
     background-color: blueviolet;
     width: 67vw;
+    overflow: auto;
 }
 
 .text-container {
     display: flex;
-    align-items: left;
-    padding: 5vh 5vw;
-    overflow: hidden;
+    padding: 5vh 4vw;
+    height: 180px;
     flex-direction: column;
+    background-color: brown;
 }
 
 h1 {
@@ -92,13 +93,9 @@ h1 {
 
 .text-container p {
     font-size: var(--font-p);
+    padding: 10px 0 0 0;
 }
 
-.text-container {
-    background-color: brown;
-    height: 25vh;
-
-}
 
 .form-container {
     background-color: greenyellow;
