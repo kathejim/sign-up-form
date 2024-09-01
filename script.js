@@ -6,7 +6,8 @@ const bdate = document.querySelector("#bdate");
 const language = document.querySelector("#language-select");
 const pass = document.querySelector("#pass");
 const confirmPass = document.querySelector("#confirm-pass");
-const usernameError = document.querySelector("#email .error");
+
+const usernameError = document.querySelector("#name + span.error");
 
 username.addEventListener("input", (event) => {
     // Each time the user types something, we check if the
@@ -15,8 +16,7 @@ username.addEventListener("input", (event) => {
     if (username.validity.valid) {
         username.textContent = "";
         username.className = "error";
-    }
-    else {
+    } else {
         showError();
     }
 });
@@ -31,11 +31,10 @@ form.addEventListener("submit", (event) => {
 
 function showError() {
     if (username.validity.valueMissing) {
-        usernameError.textContent = "You need to enter an username."
-    }
-    else if (username.validity.tooShort) {
-        username.textContent = "Username should be at least ${username.minLength} characters."
+        usernameError.textContent = "You need to enter an username.";
+    } else if (username.validity.tooShort) {
+        usernameError.textContent = "Username should be at least ${username.minLength} characters.";
     }
 
-    emailError.className = ""
+    usernameError.className = "";
 }
