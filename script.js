@@ -63,7 +63,7 @@ function showError(field) {
     } else if (field.validity.tooShort) {
         fieldError.textContent = `This value should be at least ${field.minLength} characters.`;
     } else if (field.validity.typeMismatch) {
-        fieldError.textContent = `This is not an ${field}.`
+        fieldError.textContent = `This is not an ${fieldString}.`
     } else {
         fieldError.textContent = "";
     }
