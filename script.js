@@ -28,18 +28,18 @@ form.addEventListener("submit", (event) => {
 
     //Check if all fields are valid.
     if (validatedFields != fieldLength) {
-        event.preventDefault;
+        event.preventDefault();
     }
 });
 
 
 function checkValidity(field) {
 
+    showError(field);
+
     if (!field.validity.valid) {
-        showError(field);
         return false;
-    }
-    else {
+    } else {
         return true;
     }
 };
@@ -58,8 +58,10 @@ function showError(field) {
         fieldError.textContent = "You must fill this field.";
     } else if (field.validity.tooShort) {
         fieldError.textContent = `This value should be at least ${field.minLength} characters.`;
+    } else {
+        fieldError.textContent = "";
     }
-}
+};
 
 //REAL-TIME VALIDATION
 // username.addEventListener("input", (event) => {
