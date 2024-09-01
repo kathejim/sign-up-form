@@ -38,8 +38,12 @@ function checkValidity(field) {
     showError(field);
 
     if (!field.validity.valid) {
+        field.classList.remove("valid");
+        field.classList.add("invalid");
         return false;
     } else {
+        field.classList.remove("invalid");
+        field.classList.add("valid");
         return true;
     }
 };
