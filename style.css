@@ -167,9 +167,10 @@ button {
     color: aliceblue;
 }
 
-input:valid, select:valid {
+input:valid select:valid {
     border-color: blue;
 }
-input:invalid, select:invalid {
-    border-color: red;
+
+input:focus:invalid select:focus:invalid{
+    border-color: red; 
 }
