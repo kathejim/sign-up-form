@@ -33,7 +33,7 @@ function showError() {
     if (username.validity.valueMissing) {
         usernameError.textContent = "You need to enter an username.";
     } else if (username.validity.tooShort) {
-        usernameError.textContent = "Username should be at least ${name.minLength} characters.";
+        usernameError.textContent = `Username should be at least ${username.minLength} characters.`;
     }
 
     usernameError.className = "";
