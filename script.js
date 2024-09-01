@@ -15,20 +15,23 @@ const field = [username, email, bdate, language, pass, confirmPass];
 
 form.addEventListener("submit", (event) => {
 
-    const validatedFields = 0;
+    let validatedFields = 0;
+    const fieldLength = field.length;
 
-    for (i = 0; i < 6; i++) {
-
-        checkValidity(field[i]);
-        if (checkValidity === True) {
-            validatedFields =+ 1;
+    for (i = 0; i < fieldLength; i++) {
+       
+        //Check validity of each field.
+        if (checkValidity(field[i]) === true) {
+            validatedFields += 1;
         };
     }
 
-    if (validatedFields != 6) {
+    //Check if all fields are valid.
+    if (validatedFields != fieldLength) {
         event.preventDefault;
     }
 });
+
 
 function checkValidity(field) {
 
@@ -39,11 +42,17 @@ function checkValidity(field) {
     else {
         return true;
     }
-}
+};
 
+// Show a message error.
 function showError(field) {
 
-    const fieldError = document.querySelector(`#${field} + span.error`);
+    //Transform the constant username into a string "username".
+    let fieldString = field.id;
+    
+    //Creating a variable fieldError for each fieldString.
+    let fieldError = document.querySelector(`#${fieldString} + span.error`);
+    console.log(fieldError);
 
     if (field.validity.valueMissing) {
         fieldError.textContent = "You must fill this field.";
