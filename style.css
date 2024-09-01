@@ -110,7 +110,7 @@ form {
 
 form > div {
     width: 650px;
-    background-color: blue;
+    /*! background-color: blue; */
     margin: auto;
     padding: 30px 0px;
     height: inherit;
@@ -167,10 +167,10 @@ button {
     color: aliceblue;
 }
 
-input:valid select:valid {
+input:valid, select:valid {
     border-color: blue;
 }
 
-input:focus:invalid select:focus:invalid{
+input:focus:invalid, select:focus:invalid{
     border-color: red; 
 }
