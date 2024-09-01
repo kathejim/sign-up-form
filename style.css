@@ -138,9 +138,9 @@ select {
     xappearance: none;
 }
 
-.error {
+.form-element > span {
     color: red;
-    font-size: 80%;   
+    font-size: 60%;   
 }
 
 #form-columns {
