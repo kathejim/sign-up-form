@@ -11,6 +11,8 @@
     --font-logo: clamp(1.5rem, 2vw + 1rem, 5rem);
     --font-h1: clamp(1rem, 1rem + 1vw, 3rem);
     --font-p: clamp(0.9rem, 0.5vw + 0.6rem, 2rem);
+
+    --form-width: 650px;
 }
 
 * {
@@ -33,10 +35,11 @@ body {
     background-color: pink;
     height: 100vh;
     width: 33vw;
+    overflow: hidden;
 }
 
 .image-container img {
-    height: 100vh;
+    height: 100%; 
     width: 100%;
     object-fit: cover;
 }
@@ -75,27 +78,15 @@ body {
 .body-container {
     background-color: blueviolet;
     width: 67vw;
+    padding: 30px;
     overflow: auto;
 }
 
-.text-container {
-    display: flex;
-    padding: 5vh 4vw;
-    height: 180px;
-    flex-direction: column;
-    background-color: brown;
-}
 
 h1 {
     font-size: var(--font-h1);
     padding-bottom: 3vh;
 }
-
-.text-container p {
-    font-size: var(--font-p);
-    padding: 10px 0 0 0;
-}
-
 
 .form-container {
     background-color: greenyellow;
@@ -109,8 +100,7 @@ form {
 }
 
 form > div {
-    width: 650px;
-    /*! background-color: blue; */
+    width: var(--form-width);
     margin: auto;
     padding: 30px 0px;
     height: inherit;
@@ -140,7 +130,7 @@ select {
 
 .form-element > span {
     color: red;
-    font-size: 60%;   
+    font-size: 70%;   
 }
 
 #form-columns {
@@ -174,11 +164,3 @@ button {
 .invalid {
     border-color: red;
 }
-
-/* input:valid, select:valid {
-    border-color: blue;
-}
-
-input:focus:invalid, select:focus:invalid{
-    border-color: red; 
-} */
