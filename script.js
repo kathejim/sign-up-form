@@ -9,16 +9,16 @@ const confirmPass = document.querySelector("#confirm-pass");
 
 const usernameError = document.querySelector("#name + span.error");
 
-username.addEventListener("input", (event) => {
-    // Each time the user types something, we check if the
-    // form fields are valid.
+// username.addEventListener("input", (event) => {
+//     // Each time the user types something, we check if the
+//     // form fields are valid.
 
-    if (username.validity.valid) {
-        usernameError.textContent = "";
-    } else {
-        showError();
-    }
-});
+//     if (username.validity.valid) {
+//         usernameError.textContent = "";
+//     } else {
+//         showError();
+//     }
+// });
 
 form.addEventListener("submit", (event) => {
 
