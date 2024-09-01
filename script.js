@@ -14,8 +14,8 @@ username.addEventListener("input", (event) => {
     // form fields are valid.
 
     if (username.validity.valid) {
-        username.textContent = "";
-        username.className = "error";
+        usernameError.textContent = "";
+        usernameError.className = "error";
     } else {
         showError();
     }
@@ -33,7 +33,7 @@ function showError() {
     if (username.validity.valueMissing) {
         usernameError.textContent = "You need to enter an username.";
     } else if (username.validity.tooShort) {
-        usernameError.textContent = "Username should be at least ${username.minLength} characters.";
+        usernameError.textContent = "Username should be at least ${name.minLength} characters.";
     }
 
     usernameError.className = "";
