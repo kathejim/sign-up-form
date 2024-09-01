@@ -36,5 +36,5 @@ function showError() {
         usernameError.textContent = `Username should be at least ${username.minLength} characters.`;
     }
 
-    usernameError.className = "";
+    usernameError.className = "error active";
 }
