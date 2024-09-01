@@ -23,11 +23,12 @@ form.addEventListener("submit", (event) => {
         if (checkValidity === True) {
             validatedFields =+ 1;
         };
+    }
 
     if (validatedFields != 6) {
         event.preventDefault;
     }
-}});
+});
 
 function checkValidity(field) {
 
