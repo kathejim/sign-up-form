@@ -28,3 +28,14 @@ form.addEventListener("submit", (event) => {
         event.preventDefault();
     }
 });
+
+function showError() {
+    if (username.validity.valueMissing) {
+        usernameError.textContent = "You need to enter an username."
+    }
+    else if (username.validity.tooShort) {
+        username.textContent = "Username should be at least ${username.minLength} characters."
+    }
+
+    emailError.className = ""
+}
