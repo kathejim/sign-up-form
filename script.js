@@ -4,11 +4,11 @@ const form = document.querySelector("form");
 const username = document.querySelector("#name");
 const email = document.querySelector("#email");
 const bdate = document.querySelector("#bdate");
-const language = document.querySelector("#language-select");
+const language = document.querySelector("#language");
 const pass = document.querySelector("#pass");
 const confirmPass = document.querySelector("#confirm-pass");
 
-//const fieldNames = ["#name", "#email", "#bdate", "#language-select", "#pass", "#confirm-pass"];
+//const fieldNames = ["#name", "#email", "#bdate", "#language", "#pass", "#confirm-pass"];
 const field = [username, email, bdate, language, pass, confirmPass];
 
 //const usernameError = document.querySelector("#name + span.error");
@@ -62,6 +62,8 @@ function showError(field) {
         fieldError.textContent = "You must fill this field.";
     } else if (field.validity.tooShort) {
         fieldError.textContent = `This value should be at least ${field.minLength} characters.`;
+    } else if (field.validity.typeMismatch) {
+        fieldError.textContent = `This is not an ${field}.`
     } else {
         fieldError.textContent = "";
     }
