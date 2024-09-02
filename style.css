@@ -15,7 +15,7 @@
     --form-width: 650px;
 
     --borderColor-invalid: #b93321d2;
-    --borderColor-valid: rgba(33, 139, 60, 0.829);
+    /* --borderColor-valid: rgba(33, 139, 60, 0.829); */
 }
 
 * {
@@ -34,7 +34,6 @@ body {
 
 .image-container {
     position: relative;
-    background-color: pink;
     height: 100vh;
     width: 33vw;
     overflow: hidden;
@@ -177,9 +176,9 @@ button {
     font-family: inherit;
 }
 
-.valid {
-    /*! border-color: var(--borderColor-valid); */
-}
+/* .valid {
+    border-color: var(--borderColor-valid);
+} */
 
 .invalid {
     border-color: var(--borderColor-invalid);
